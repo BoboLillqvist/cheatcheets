@@ -24,3 +24,12 @@
 	$ git commit -m "first commit"
 	$ git add remote [url]
 	$ git push -u origin master
+	
+## Branches 
+### Create a branch from a branch
+
+```git
+$ git checkout -b myfeature develop
+$ git commit -am "Your message"
+$ git checkout develop
+$ git merge --no-ff myfeature
